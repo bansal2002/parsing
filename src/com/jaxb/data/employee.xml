@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<car>
+<Cars>
+  <Car>
     <color>Black</color>
     <companyName>BMW</companyName>
     <fuelType>diesel</fuelType>
     <mileage>10</mileage>
     <modalName>BMW X5</modalName>
     <price>7800000</price>
-</car>
+   </Car>
+</Cars>
+
+

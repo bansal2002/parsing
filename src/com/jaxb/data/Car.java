@@ -1,9 +1,13 @@
 package com.jaxb.data;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 
-@XmlRootElement
+@XmlRootElement(name = "Car")
+@XmlAccessorType (XmlAccessType.FIELD)
 public class Car {
 	
 	private String modalName;
@@ -26,8 +30,8 @@ public class Car {
 		this.color = color;
 		this.mileage = mileage;
 	}
+
 	
-	@XmlElement
 	public String getModalName() {
 		return modalName;
 	}
@@ -35,7 +39,7 @@ public class Car {
 		this.modalName = modalName;
 	}
 	
-	@XmlElement
+	
 	public long getPrice() {
 		return price;
 	}
@@ -43,7 +47,7 @@ public class Car {
 		this.price = price;
 	}
 	
-	@XmlElement
+
 	public String getFuelType() {
 		return fuelType;
 	}
@@ -51,7 +55,7 @@ public class Car {
 		this.fuelType = fuelType;
 	}
 	
-	@XmlElement
+	
 	public String getCompanyName() {
 		return companyName;
 	}
@@ -59,7 +63,7 @@ public class Car {
 		this.companyName = companyName;
 	}
 	
-	@XmlElement
+	
 	public String getColor() {
 		return color;
 	}
@@ -67,7 +71,7 @@ public class Car {
 		this.color = color;
 	}
 	
-	@XmlElement
+	
 	public int getMileage() {
 		return mileage;
 	}
